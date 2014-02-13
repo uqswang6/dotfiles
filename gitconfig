@@ -74,19 +74,21 @@
 [diff]
     renames = copy
 
+[difftool "latex"]
+    cmd = latexdiff  \"$LOCAL\" \"$REMOTE\"
+
 [help]
     autocorrect = 1
-
 
 [merge]
     tool = vimdiff
 
-[merge "merge-changelog"]
-    name = GNU-style ChangeLog merge driver
-    driver = /usr/bin/git-merge-changelog %O %A %B
+#[merge "merge-changelog"]
+#    name = GNU-style ChangeLog merge driver
+#    driver = /usr/bin/git-merge-changelog %O %A %B
 
-[push]
-    default = simple
+#[push]
+#    default = simple
 
 [rerere]
     enabled = true

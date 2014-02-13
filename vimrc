@@ -66,9 +66,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 "Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
-Bundle 'bling/vim-airline'
+"Bundle 'bling/vim-airline'
 Bundle 'gerw/vim-latex-suite'
-Bundle 'airblade/vim-gitgutter'
+"Bundle 'airblade/vim-gitgutter'
 
 Bundle 'a.vim'
 Bundle 'python.vim'
@@ -102,8 +102,8 @@ autocmd BufNewFile,BufReadPre /media/*,/mnt/* set directory=~/tmp,/var/tmp,/tmp
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
-let g:Powerline_symbols = 'fancy'
-let g:airline_theme='badwolf'
+"let g:Powerline_symbols = 'fancy'
+"let g:airline_theme='badwolf'
 " CTags settings
 let g:ctags_statusline=1
 let g:generate_tags=1
