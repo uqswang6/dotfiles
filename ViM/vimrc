@@ -186,8 +186,18 @@ command W w !sudo tee % > /dev/null
 
 " Toggle hardmode with <leader>h
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+
+" Remap <leader><leader> to mean <ESC>
 nnoremap <leader><leader> <Esc>
 inoremap <leader><leader> <Esc>
+
+" Use ,n to open Nerdtree
+map <leader>n :NERDTreeToggle<CR>
+
+" Create ew set of motion, gqlp. Works like gqap but is more latex aware. Need a
+" cleaner solution since this is a hack.
+omap lp ?^$\\|^\s*\(\\begin\\|\\end\\|\\label\\|\\section\\|\\subsection\)?1<CR>//-1<CR>.<CR>
+
 
 " }}}
 
