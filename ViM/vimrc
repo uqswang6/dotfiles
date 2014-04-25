@@ -174,7 +174,7 @@ let g:generate_tags=1
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " }}}
 
-" Keyboard Shortcuts {{{
+" Custom Mappings {{{
 iab <expr> dts strftime("%F")
 iab <expr> dtt strftime("%F  Darshit Shah  <darnir@gmail.com>")
 set pastetoggle=<F2>        " Toggle paste mode with <F2>
@@ -198,7 +198,9 @@ map <leader>n :NERDTreeToggle<CR>
 " cleaner solution since this is a hack.
 omap lp ?^$\\|^\s*\(\\begin\\|\\end\\|\\label\\|\\section\\|\\subsection\)?1<CR>//-1<CR>.<CR>
 
-
+" You can now undo <c-u> and <c-w>
+inoremap <c-u> <c-g>u<c-u>
+inoremap <c-w> <c-g>u<c-w>
 " }}}
 
 " Syntastic Settings {{{
