@@ -23,6 +23,7 @@ post_install() {
         echo "Please install the following optional dependencies:"
         echo "Optional Dependencies:  "
         echo "bash-completion:        For bash completion"
+        echo "acpi:                   For PS1 Prompt"
         echo "time:                   For certain wget aliases"
         echo "beep:                   For alias alert"
         echo "zenity:                 For timer() function"
