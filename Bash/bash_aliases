@@ -15,7 +15,7 @@ alias vi="vim"
 alias :q='exit'
 alias :wq='exit'
 alias alert='beep -f 5000 -l 60 -r 2'
-alias aur='cower -ddfu --target=/home/sauron/builds/'
+alias aur="cower -ddfu --target=/home/darnir/builds/"
 alias cleantex='rm *.{aux,bbl,blg,log,lot,out,toc,pdf,dvi,fdb_latexmk,fls} 2>/dev/null'
 alias da='date "+%A, %B %d, %Y [%T]"'
 alias du1='du --max-depth=1'
