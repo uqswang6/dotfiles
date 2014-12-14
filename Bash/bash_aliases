@@ -47,6 +47,9 @@ alias chgrp='chgrp --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chown='chown --preserve-root'
 
+#Qemu
+alias run66='qemu-system-x86_64 -m 1G -hda ~/rENIAC/qemu/centos66_root.img -hdb ~/rENIAC/qemu/centos66_home.img -enable-kvm'
+
 # Allows one to use bash aliases with superuser permissions. See bash(1) for
 # details
 alias sudo='sudo '
